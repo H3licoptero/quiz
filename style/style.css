@@ -340,11 +340,18 @@ a {
   margin-top: 29px;
   margin-bottom: 212px; }
 
+.header__container {
+  display: flex;
+  max-width: 1530px;
+  width: 100%;
+  justify-content: space-between; }
+
 .header__info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-left: 50px; }
 
 .header__menu {
   display: flex;
@@ -389,6 +396,16 @@ a {
   align-items: center;
   margin-bottom: 165px; }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  background-image: url("../../img/main-screen/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
 .content__text {
   font-size: 36px;
   text-align: center;
@@ -432,11 +449,14 @@ a {
   display: flex;
   justify-content: flex-end;
   background-color: #ffffff;
-  box-shadow: 0px -3px 12px rgba(0, 0, 0, 0.06); }
+  box-shadow: 0px -3px 12px rgba(0, 0, 0, 0.06);
+  height: 100px; }
 
 .footer__container {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center;
+  height: 100%; }
 
 .footer__education, .footer__login {
   display: flex;
@@ -447,13 +467,44 @@ a {
   margin-right: 10px; }
 
 .footer__logo-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  position: relative; }
 
-.footer__logo {
-  margin-bottom: 9px;
-  border-radius: 35px; }
+.footer__logo-link {
+  position: absolute;
+  top: -75px;
+  left: 72px;
+  z-index: 1;
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 30px 30px; }
+
+.footer__logo-link::before {
+  position: absolute;
+  content: '';
+  background-image: url("../../img/main-screen/polygon-left.svg");
+  background-repeat: no-repeat;
+  left: -21px;
+  top: 17px;
+  width: 70px;
+  height: 70px;
+  z-index: -1; }
+
+.footer__logo-link::after {
+  position: absolute;
+  content: '';
+  background-image: url("../../img/main-screen/polygon-left.svg");
+  background-repeat: no-repeat;
+  right: -21px;
+  top: 17px;
+  width: 70px;
+  height: 70px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: scaleX(-1); }
+
+.support__link {
+  margin: auto;
+  margin-right: 50px; }
 
 @media screen and (max-width: 680px) {
   body {

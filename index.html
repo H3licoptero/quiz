@@ -8,52 +8,56 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <div class="container quiz__container">
-        <header class="header quiz__header">
-            <div class="logo logo__item">
-                <a class="logo__link" href="index.html"><img src="./img/main-screen/Logo.svg" alt=""></a>
+    <main class="main">
+        <div class="container quiz__container">
+            <header class="header quiz__header">
+                <div class="header__container">
+                    <div class="logo logo__item">
+                        <a class="logo__link" href="index.html"><img src="./img/main-screen/Logo.svg" alt=""></a>
+                    </div>
+                    <div class="info header__info">
+                        <p class="info__support">Техподдержка</p>
+                        <p class="info__phone">+7 (499) 495-48-21</p>
+                    </div>
+                    <div class="menu header__menu">
+                        <p class="menu__text">Меню</p>
+                        <div class="burger menu__burger">
+                            <div class="burger__item burger__item-top"></div>
+                            <div class="burger__item burger__item-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+    
+            <div class="content quiz__content">
+                <p class="content__text">
+                    Привет, я MedBot, сейчас мы вместе быстро определим и решим вашу задачу. С каким отделом вас соеденить?
+                </p>
+                <div class="content__buttons">
+                    <a class="button content__button">Отдел сервиса</a>
+                    <a class="button content__button">Отдел продаж</a>
+                </div>
+                <a href="#" class="skip content__link skip__link">Пропустить</a>
             </div>
-            <div class="info header__info">
-                <p class="info__support">Техподдержка</p>
-                <p class="info__phone">+7 (499) 495-48-21</p>
-            </div>
-            <div class="menu header__menu">
-                <p class="menu__text">Меню</p>
-                <div class="burger menu__burger">
-                    <div class="burger__item burger__item-top"></div>
-                    <div class="burger__item burger__item-bottom"></div>
+    
+            
+        </div>
+        <footer class="footer quiz__footer">
+            <div class="container footer__container quiz__container">
+                <div class="education footer__education">
+                    <img class="education__image footer__image" src="./img/main-screen/education-icon.svg" alt="education">
+                    <p>Образование</p>
+                </div>
+                <div class="footer__logo-block">
+                    <a href="index.html" class="footer__logo-link"><img src="./img/main-screen/footer-logo.svg" alt="footer-logo" class="footer__img"></a>
+                    <a class="support__link">Свяжитесь с нами сейчас</a>
+                </div>
+                <div class="login footer__login">
+                    <img class="user__image footer__image" src="./img/main-screen/userlogo.svg" alt="user">
+                    <p>Войти</p>
                 </div>
             </div>
-        </header>
-
-        <div class="content quiz__content">
-            <p class="content__text">
-                Привет, я MedBot, сейчас мы вместе быстро определим и решим вашу задачу. С каким отделом вас соеденить?
-            </p>
-            <div class="content__buttons">
-                <a class="button content__button">Отдел сервиса</a>
-                <a class="button content__button">Отдел продаж</a>
-            </div>
-            <a href="#" class="skip content__link skip__link">Пропустить</a>
-        </div>
-
-        
-    </div>
-    <footer class="footer quiz__footer">
-        <div class="container footer__container quiz__container">
-            <div class="education footer__education">
-                <img class="education__image footer__image" src="./img/main-screen/education-icon.svg" alt="education">
-                <p>Образование</p>
-            </div>
-            <div class="footer__logo-block logo">
-                <a href="index.html" class="logo__link footer__logo"><img src="./img/main-screen/footer-logo.svg" alt="footer-logo"></a>
-                <p class="support__link">Свяжитесь с нами сейчас</p>
-            </div>
-            <div class="login footer__login">
-                <img class="user__image footer__image" src="./img/main-screen/userlogo.svg" alt="user">
-                <p>Войти</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </main>
 </body>
 </html>
