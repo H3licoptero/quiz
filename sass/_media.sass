@@ -14,6 +14,9 @@
             align-items: center
         &__info
             display: none
+    .info
+        &__support
+            opacity: 0.5
     .menu
         &__text
             display: none
@@ -42,7 +45,8 @@
             width: 260px
             padding: 15px
     .quiz
-        &__footer
+        &__footer  
+            display: none
             height: 60px
     .desktop-footer
         &__logo-link
@@ -52,24 +56,75 @@
             display: block
             background-image: url('../../img/main-screen/mobile-footer-bg.svg')
             background-repeat: no-repeat
-
+    .quiz
+        &__footer 
+            height: 250px
+            position: fixed
+            display: flex
+            justify-content: center
+            background-color: #ffffff
+            box-shadow: 0px -3px 12px rgba(0, 0, 0, 0.06)
+            bottom: 60px
+            width: 100%
+            transition: all 0.5s ease
+            transform: translateY(235px)
+        &__footer:hover
+            transform: translateY(70px)
+            transition: all 0.5s ease
     .footer
         &__education, &__login
             display: none
         &__container
             justify-content: center
+            max-width: 380px
         &__logo-link 
             position: absolute
-            top: -45px
+            top: -43px
             left: 47px
             background-image: url('../../img/main-screen/mobile-footer-bg.svg')
             background-repeat: no-repeat
             background-position: center top
+        &__social-item 
+            display: flex
+            align-items: center
+            justify-content: center
+            padding-right: 18px
+            height: 40px
+            width: 123px
+            margin-right: 20px
+            background-color: #1C1C1C
+            border-radius: 46px
+            font-size: 14px
+            color: #ffffff
+            box-shadow: 0px -3px 12px rgba(0, 0, 0, 0.06)
+            margin: 0 20px 20px 0
+        &__socials-wrapper 
+            display: flex
+            justify-content: center
+            width: 100%
+            flex-wrap: wrap
+            flex-basis: 85%
+        &__social-item:nth-last-child(2)
+            margin-right: 0
+        &__social-item:nth-last-child(4)
+            margin-right: 0
+        &__logo-block
+            left: -5px
     .support
         &__link
             margin: auto
             position: relative
             top: 5px
+    .footer
+        &__info.header__info
+            display: block
+            text-align: center
+            margin-left: 0
+@media screen and ( max-width: 460px )
+    .footer
+        &__container
+            margin-left: 0
+            margin-right: 0    
 @media screen and ( max-width: 420px )
     .quiz
         &__header
@@ -112,7 +167,7 @@
             padding: 15px
     .quiz
         &__footer
-            height: 60px
+            // height: 60px
     .desktop-footer
         &__logo-link
             display: none
@@ -126,13 +181,22 @@
             justify-content: center
         &__logo-link 
             position: absolute
-            top: -45px
+            top: -43px
             left: 47px
+        &__logo-block
+            left: -5px
     .support
         &__link
             margin: auto
             position: relative
             top: 5px
+@media screen and ( max-width: 380px )
+    .footer
+        &__social-item
+            margin: 0 15px 15px 0
+        &__socials-wrapper
+            flex-basis: 100%
+
 @media screen and ( max-width: 320px )
     .quiz
         &__header
@@ -175,7 +239,7 @@
             padding: 15px
     .quiz
         &__footer
-            height: 60px
+            // height: 60px
     .footer
         &__education, &__login
             display: none
