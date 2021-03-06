@@ -684,7 +684,13 @@ a {
   body {
     font-size: 14px; }
   .content__text {
-    font-size: 24px; } }
+    font-size: 24px;
+    max-width: 560px; }
+  .skip__link {
+    font-size: 14px; }
+  .skip__link::after {
+    width: 5px;
+    height: 8px; } }
 
 @media screen and (max-width: 980px) {
   .support__link {
@@ -697,6 +703,8 @@ a {
     max-width: 540px; } }
 
 @media screen and (max-width: 610px) {
+  .header__info {
+    display: none; }
   .footer__education, .footer__login {
     display: none; }
   .footer__container {
@@ -760,7 +768,12 @@ a {
   .mobile-footer__logo-link {
     display: block;
     background-image: url("../../img/main-screen/mobile-footer-bg.svg");
-    background-repeat: no-repeat; } }
+    background-repeat: no-repeat; }
+  .skip__link {
+    font-size: 14px; }
+  .skip__link::after {
+    width: 5px;
+    height: 8px; } }
 
 @media screen and (max-width: 540px) {
   .quiz__header {
