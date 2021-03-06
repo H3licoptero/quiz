@@ -701,7 +701,7 @@ input[type="radio"]:checked + label:after {
   max-width: 736px;
   width: 100%; }
 
-.defibrillator__content {
+.defibrillator__content, .defibrillator .form__content {
   display: flex;
   max-width: 650px;
   width: 100%;
@@ -892,6 +892,80 @@ input[type="radio"]:checked + label:after {
 
 .footer__info {
   display: none; }
+
+.important__header {
+  margin-bottom: 74px; }
+
+.main__important {
+  height: 120vh; }
+
+.content__checkbox {
+  font-size: 16px; }
+
+.content__checkbox-item {
+  margin-bottom: 20px; }
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: -9999px; }
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer; }
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #dddddd;
+  background-color: #ffffff; }
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+  border-radius: 2px; }
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+  left: 4px;
+  top: 5px;
+  width: 10px;
+  height: 5px;
+  border-radius: 1px;
+  border-left: 4px solid #75C36E;
+  border-bottom: 4px solid #75C36E;
+  border-radius: 25px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+input[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0; }
+
+input[type="checkbox"]:checked + label:after {
+  opacity: 1; }
+
+input[type="checkbox"]:not(:checked) + label:before {
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.06); }
 
 @media screen and (max-width: 1024px) {
   body {

@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <main class="main">
+    <main class="main main__important">
         <div class="container quiz__container">
-            <header class="header quiz__header defibrillator__header">
+            <header class="header quiz__header important__header">
                 <div class="header__container">
                     <div class="logo logo__item">
                         <a class="logo__link" href="index.html"><img src="./img/main-screen/Logo.svg" alt=""></a>
@@ -29,45 +29,78 @@
                 </div>
             </header>
 
-            <a class="button-back" href="defibrillator.html">
+            <a class="button-back" href="index.html">
                 <img class="arrow-back" src="./img/main-screen/arrow-link.svg" srcset="./img/main-screen/arrow-link.svg x2" alt="button-back">
             </a>
-            <div class="content quiz__content defibrillator__content">
-                <p class="content__text question__text defibrillator__text">
-                    Выберите комплектацию
+            <div class="content quiz__content defibrillator__content form__content">
+                <p class="content__text question__text form__text defibrillator__text">
+                    Что для Вас является наиболее важным при покупке?
                 </p>
-                <form action="#" class="content__search-form content__radio" >
-                    <div class="content__radio-item">
-                        <input class="content__radio-input" type="radio" value="Basic" id="radio-1" name="radio-content" checked>
-                        <label class="content__radio-label" for="radio-1">Базовая</label>
+                <form action="#" class="content__search-form content__checkbox">
+                    <div class="checkbox__wrapper">
+                        <div class="content__checkbox-item">
+                            <input class="content__checkbox-input" type="checkbox" id="checkbox-1" name="checkbox-content" checked>
+                            <label class="content__checkbox-label" for="checkbox-1">Дешево и сердито</label>
+                        </div>
+                        <div class="content__checkbox-item">
+                            <input class="content__checkbox-input" type="checkbox" id="checkbox-2" name="checkbox-content">
+                            <label class="content__checkbox-label" for="checkbox-2">Крепкий среднячек</label>
+                        </div>
+                        <div class="content__checkbox-item">
+                            <input class="content__checkbox-input" type="checkbox"  id="checkbox-3" name="checkbox-content"> 
+                            <label class="content__checkbox-label" for="checkbox-3">Только самое лучшее</label>
+                        </div>
                     </div>
-                    <div class="content__radio-item">
-                        <input class="content__radio-input" type="radio" value="Pacing" id="radio-2" name="radio-content">
-                        <label class="content__radio-label" for="radio-2">Функция кардиостимуляции</label>
+                    <div class="checkbox__wrapper">
+                        <div class="content__checkbox-item">
+                            <input class="content__checkbox-input" type="checkbox"  id="checkbox-4" name="checkbox-content" checked>
+                            <label class="content__checkbox-label" for="checkbox-4">Только новое оборудование</label>
+                        </div>
+                        <div class="content__checkbox-item">
+                            <input class="content__checkbox-input" type="checkbox" id="checkbox-5" name="checkbox-content">
+                            <label class="content__checkbox-label" for="checkbox-5">Готов рассмотреть и восстановленное</label>
+                        </div>
+                        <div class="content__checkbox-item">
+                            <input class="content__checkbox-input" type="checkbox"  id="checkbox-6" name="checkbox-content"> 
+                            <label class="content__checkbox-label" for="checkbox-6">Я вообще-то из ГОСа и у нас все очень серьезно! Закупки, все дела...</label>
+                        </div>
                     </div>
-                    <div class="content__radio-item">
-                        <input class="content__radio-input" type="radio" value="EKG" id="radio-3" name="radio-content"> 
-                        <label class="content__radio-label" for="radio-3">Модуль ЭКГ</label>
+                    <div class="checkbox__wrapper">
+                        <div class="content__checkbox-item">
+                            <input class="content__checkbox-input" type="checkbox"  id="checkbox-7" name="checkbox-content" checked>
+                            <label class="content__checkbox-label" for="checkbox-7">У меня много денег, готов заплатить 100%, но хочу скидку</label>
+                        </div>
+                        <div class="content__checkbox-item">
+                            <input class="content__checkbox-input" type="checkbox"  id="checkbox-8" name="checkbox-content">
+                            <label class="content__checkbox-label" for="checkbox-8">Мне нужна рассрочка ну на месяц или два, может три ...</label>
+                        </div>
+                        <div class="content__checkbox-item">
+                            <input class="content__checkbox-input" type="checkbox"  id="checkbox-9" name="checkbox-content"> 
+                            <label class="content__checkbox-label" for="checkbox-9">Мне нужен лизинг на длительный срок</label>
+                        </div>
                     </div>
-                    <div class="content__radio-item">
-                        <input class="content__radio-input" type="radio" value="NIAD" id="radio-4" name="radio-content">
-                        <label class="content__radio-label" for="radio-4">Модуль НИАД</label>
-                    </div>
-                    <div class="content__radio-item">
-                        <input class="content__radio-input" type="radio" value="SPO2" id="radio-5" name="radio-content">
-                        <label class="content__radio-label" for="radio-5">Модуль SPO2</label>
-                    </div>
-                    <div class="content__radio-item">
-                        <input class="content__radio-input" type="radio" value="Truck" id="radio-6" name="radio-content">
-                        <label class="content__radio-label" for="radio-6">Тележка</label>
+                    <div class="checkbox__wrapper">
+                        <div class="content__checkbox-item">
+                            <input class="content__checkbox-input" type="checkbox"  id="checkbox-10" name="checkbox-content" checked>
+                            <label class="content__checkbox-label" for="checkbox-10">Ищу оборудование только в наличии</label>
+                        </div>
+                        <div class="content__checkbox-item">
+                            <input class="content__checkbox-input" type="checkbox"  id="checkbox-11" name="checkbox-content">
+                            <label class="content__checkbox-label" for="checkbox-11">Могу подождать 1 месяц</label>
+                        </div>
+                        <div class="content__checkbox-item">
+                            <input class="content__checkbox-input" type="checkbox"  id="checkbox-12" name="checkbox-content"> 
+                            <label class="content__checkbox-label" for="checkbox-12">Ну так и быть подожду 2-3 месяца</label>
+                        </div>
+                        <div class="content__checkbox-item">
+                            <input class="content__checkbox-input" type="checkbox"  id="checkbox-13" name="checkbox-content"> 
+                            <label class="content__checkbox-label" for="checkbox-13">Ой, чуть не забыл, мне будет нужен аппарат к лицензированию</label>
+                        </div>
                     </div>
                 </form>
             </div>
-            <div class="defibrillator__block">
-                <div class="defibrillator__price">
-                    <span>Примерная цена</span>
-                    <p>500 тыс. руб.</p> 
-                </div>
+
+            <div class="important important__button defibrillator__block">
                 <a href="#" class="skip content__link defibrillator__skip">Далее</a>
             </div>
             
