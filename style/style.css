@@ -427,10 +427,14 @@ a {
 
 .content__buttons {
   display: flex;
-  margin-bottom: 51px; }
+  margin-bottom: 51px;
+  flex-wrap: wrap;
+  max-width: 677px;
+  justify-content: center; }
 
 .content__button {
-  margin-right: 20px; }
+  margin-right: 20px;
+  margin-bottom: 20px; }
 
 .content__button:last-child {
   margin-right: 0; }
@@ -443,26 +447,56 @@ a {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
   border: 1px solid #E3E8EA;
   cursor: pointer;
+  text-align: center;
+  color: #1C1C1C;
   overflow: hidden; }
 
 .button:before {
-  content: '';
+  content: attr(data-text);
   position: absolute;
-  display: block;
-  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
   right: 0;
   height: 0;
   width: 100%;
-  background-color: rgba(28, 28, 28, 0.2);
-  opacity: 0.3;
-  transition: all 0.5s ease; }
+  color: #1C1C1C;
+  background-color: rgba(28, 28, 28, 0.1);
+  transition: all 0.5s ease;
+  opacity: 0; }
 
 .button:hover::before {
-  background: rgba(28, 28, 28, 0.2);
-  top: auto;
-  bottom: 0%;
+  background: rgba(28, 28, 28, 0.1);
+  bottom: 0;
   height: 100%;
+  transition: all 0.5s ease;
+  opacity: 1; }
+
+.button::after {
+  content: attr(data-text);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #1C1C1C;
+  background-color: #ffffff;
   transition: all 0.5s ease; }
+
+.button:hover::after {
+  background: #ffffff;
+  transform: translateY(-10px);
+  top: 0;
+  height: 0;
+  transition: all 0.5s ease;
+  opacity: 0; }
+
+.button:hover span, .button span {
+  opacity: 0; }
 
 .skip__link {
   position: relative;
@@ -538,7 +572,7 @@ a {
 .footer__logo-link {
   position: absolute;
   top: -75px;
-  left: 50px;
+  left: 55px;
   background: url("../../img/main-screen/footer-logo-bg.svg");
   background-repeat: no-repeat;
   background-position: center top; }
@@ -562,41 +596,72 @@ a {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
   border: 1px solid #1C1C1C;
   overflow: hidden;
-  transition: all 0.7s ease; }
+  transition: all 0.5s ease; }
+
+.footer__social-item span {
+  opacity: 0; }
 
 .footer__social-item img {
   width: 12px;
   height: 12px;
   padding-left: 18px;
-  padding-right: 10px; }
+  padding-right: 10px;
+  z-index: 2;
+  transition: all 0.5s ease; }
 
 .footer__social-item::before {
-  content: '';
+  content: attr(data-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  display: block;
-  top: 0;
-  right: 0;
+  bottom: 0;
+  left: 0;
   height: 0;
   width: 100%;
   background-color: #ffffff;
-  transition: all 0.7s ease;
-  z-index: -1; }
+  z-index: 1;
+  padding-left: 10px;
+  transition: all 0.5s ease;
+  opacity: 0; }
+
+.footer__social-item::after {
+  content: attr(data-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1C1C1C;
+  transition: all 0.5s ease;
+  z-index: 1;
+  color: #ffffff;
+  padding-left: 10px; }
 
 .footer__social-item:hover img {
-  transition: all 0.7s ease;
-  filter: invert(10); }
+  transition: all 0.5s ease;
+  filter: invert(10);
+  z-index: 2; }
 
 .footer__social-item:hover {
   color: #1C1C1C;
-  transition: all 0.7s ease;
-  z-index: 2; }
+  transition: all 0.5s ease; }
 
 .footer__social-item:hover::before {
+  bottom: 0;
+  height: 100%;
+  transition: all 0.5s ease;
+  opacity: 1; }
+
+.footer__social-item:hover::after {
   top: auto;
   bottom: 0;
   width: 100%;
-  height: 100%;
-  transition: all 0.7s ease; }
+  transform: translateY(-100%);
+  transition: all 0.5s ease; }
 
 .footer__link {
   margin: auto;
@@ -608,9 +673,87 @@ a {
 .footer__info {
   display: none; }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1024px) {
   body {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .content__text {
+    font-size: 24px; } }
+
+@media screen and (max-width: 980px) {
+  .support__link {
+    margin: auto;
+    position: relative;
+    top: 5px; }
+  .footer__logo-link {
+    left: 30px; }
+  .quiz__content {
+    max-width: 540px; } }
+
+@media screen and (max-width: 610px) {
+  .footer__education, .footer__login {
+    display: none; }
+  .footer__container {
+    justify-content: center;
+    max-width: 380px; }
+  .footer__logo-link {
+    position: absolute;
+    top: -43px;
+    left: 47px;
+    background-image: url("../../img/main-screen/mobile-footer-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center top; }
+  .footer__social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 18px;
+    height: 40px;
+    width: 123px;
+    margin-right: 20px;
+    background-color: #1C1C1C;
+    border-radius: 46px;
+    font-size: 14px;
+    color: #ffffff;
+    box-shadow: 0px -3px 12px rgba(0, 0, 0, 0.06);
+    margin: 0 20px 20px 0; }
+  .footer__socials-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-basis: 85%; }
+  .footer__social-item:nth-last-child(2) {
+    margin-right: 0; }
+  .footer__social-item:nth-last-child(4) {
+    margin-right: 0; }
+  .footer__logo-block {
+    left: -5px; }
+  .footer__info.header__info {
+    display: block;
+    text-align: center;
+    margin-left: 0; }
+  .quiz__footer {
+    display: none; }
+  .quiz__footer {
+    height: 250px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0px -3px 12px rgba(0, 0, 0, 0.06);
+    bottom: 60px;
+    width: 100%;
+    transition: all 0.5s ease;
+    transform: translateY(235px); }
+  .quiz__footer:hover {
+    transform: translateY(70px);
+    transition: all 0.5s ease; }
+  .desktop-footer__logo-link {
+    display: none; }
+  .mobile-footer__logo-link {
+    display: block;
+    background-image: url("../../img/main-screen/mobile-footer-bg.svg");
+    background-repeat: no-repeat; } }
 
 @media screen and (max-width: 540px) {
   .quiz__header {
