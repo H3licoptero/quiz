@@ -17,6 +17,7 @@
     background-size: cover
     background-position: center center
     overflow-x: hidden
+    z-index: 3
 .content
     &__text 
         font-size: 36px
@@ -45,6 +46,7 @@
     text-align: center
     color: $black
     overflow: hidden
+    z-index: 2
 .button:before
     content: attr(data-text)
     position: absolute
@@ -59,6 +61,8 @@
     background-color: rgba($black, 0.1)
     transition: all 0.5s ease
     opacity: 0
+    overflow: hidden
+    z-index: 1
 .button:hover::before
     background: rgba($black, 0.1)
     bottom: 0
@@ -78,6 +82,8 @@
     color: $black
     background-color: $white
     transition: all 0.5s ease
+    overflow: hidden
+    z-index: 1
 .button:hover::after
     background: $white
     transform: translateY(-10px)

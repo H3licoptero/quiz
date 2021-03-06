@@ -63,7 +63,6 @@
     .quiz
         &__footer  
             display: none
-            // height: 60px
         &__footer 
             height: 250px
             position: fixed
@@ -86,18 +85,18 @@
             display: block
             background-image: url('../../img/main-screen/mobile-footer-bg.svg')
             background-repeat: no-repeat
-    
 @media screen and ( max-width: 540px )
     .quiz
         &__header
             margin-bottom: 115px
     .header
         &__container 
-            max-width: 260px
             width: 100%
             margin: auto
             display: flex
             align-items: center
+            margin-right: 35px
+            margin-left: 35px
         &__info
             display: none
     .info
@@ -129,7 +128,7 @@
             margin-bottom: 15px
             text-align: center
             width: 260px
-            padding: 15px
+            padding: 15px 0
     .quiz
         &__footer  
             display: none
@@ -217,11 +216,12 @@
             margin-bottom: 115px
     .header
         &__container 
-            max-width: 260px
             width: 100%
             margin: auto
             display: flex
             align-items: center
+            margin-right: 35px
+            margin-left: 35px   
         &__info
             display: none
     .menu
@@ -250,10 +250,6 @@
             margin-bottom: 15px
             text-align: center
             width: 260px
-            padding: 15px
-    .quiz
-        &__footer
-            // height: 60px
     .desktop-footer
         &__logo-link
             display: none
@@ -282,14 +278,12 @@
             margin: 0 15px 15px 0
         &__socials-wrapper
             flex-basis: 100%
-
 @media screen and ( max-width: 320px )
     .quiz
         &__header
             margin-bottom: 115px
     .header
         &__container 
-            max-width: 260px
             width: 100%
             margin: auto
             display: flex
@@ -322,10 +316,6 @@
             margin-bottom: 15px
             text-align: center
             width: 260px
-            padding: 15px
-    .quiz
-        &__footer
-            // height: 60px
     .footer
         &__education, &__login
             display: none
