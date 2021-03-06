@@ -65,6 +65,57 @@
     &__input::placeholder
         color: #000
         opacity: 0.4
+    &__radio-item
+        display: flex
+        text-align: left
+        margin-bottom: 20px
+    &__radio-item:last-child
+        margin-bottom: 0
+    &__radio-label
+        padding-left: 5px
+    // &__radio-input
+input[type="radio"]:checked, 
+input[type="radio"]:not(:checked) 
+    position: absolute
+    left: -9999px
+input[type="radio"]:checked + label, 
+input[type="radio"]:not(:checked) + label 
+
+    position: relative
+    padding-left: 35px
+    line-height: 20px
+    cursor: pointer
+input[type="radio"]:checked
+    filter: invert(65%) sepia(24%) saturate(751%) hue-rotate(68deg) brightness(103%) contrast(86%)
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before
+    content: ""
+    position: absolute
+    left: 0px
+    top: 0px
+    width: 20px
+    height: 20px
+    border: 1px solid #E3E8EA
+    background-color: #ffffff
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before
+    border-radius: 100%
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after 
+    content: ""
+    position: absolute
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after 
+    left: 5px
+    top: 5px
+    width: 12px
+    height: 12px
+    border-radius: 100%
+    background-color: #75C36E
+input[type="radio"]:not(:checked) + label:after 
+    opacity: 0
+input[type="radio"]:checked + label:after 
+    opacity: 1
 .search
     &__button
         position: absolute
@@ -217,6 +268,46 @@
     &__content
         max-width: 736px
         width: 100%
+.defibrillator
+    &__content
+        display: flex
+        max-width: 650px
+        width: 100%
+        margin-bottom: 20px
+        background-color: $white
+        padding: 40px 34px
+        border: 1px solid #E3E8EA
+        box-sizing: border-box
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07)
+        border-radius: 25px
+    &__text
+        text-align: left
+        margin-bottom: 30px
+    &__header
+        margin-bottom: 94px
+    &__block
+        max-width: 650px
+        width: 100%
+        margin: auto
+    &__price
+        margin-bottom: 50px
+        margin-left: 40px
+    &__price span
+        display: flex
+        font-size: 12px
+        line-height: 15px
+        margin-bottom: 5px
+    &__price p
+        font-size: 24px
+    &__skip
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: auto
+        border: 1px solid $black
+        border-radius: 46px
+        max-width: 117px
+        height: 45px
 
 
     

@@ -28,22 +28,23 @@
                     </div>
                 </div>
             </header>
-            <div class="content quiz__content defibrill__content">
-                <a class="button-back" href="model-chose.html">
-                    <img class="arrow-back" src="./img/main-screen/arrow-link.svg" srcset="./img/main-screen/arrow-link.svg x2" alt="button-back">
-                </a>
-                <p class="content__text">
-                    Выберите модель оборудования
+
+            <a class="button-back" href="table-operation.html">
+                <img class="arrow-back" src="./img/main-screen/arrow-link.svg" srcset="./img/main-screen/arrow-link.svg x2" alt="button-back">
+            </a>
+            <div class="content quiz__content question__content screen__content">
+                <p class="content__text question__text screen__text">
+                    Укажите, пожалуйста, примерный бюджет, на который вы рассчитываете
                 </p>
-                <div class="content__buttons defibrill__buttons">
-                    <a class="button content__button" href="defibrillator-model.html" data-text="Монитор-дифибриллятор Mindray BeneHeart D3"><span>Монитор-дифибриллятор Mindray BeneHeart D3</span></a>
-                    <a class="button content__button" href="defibrillator-model.html" data-text="Монитор-дифибриллятор Mindray BeneHeart D6"><span>Монитор-дифибриллятор Mindray BeneHeart D6</span></a>
-                    <a class="button content__button" href="defibrillator-budget.html" data-text="Не важно"><span>Не важно</span></a>
+                <div class="content__buttons">  
+                    <form class="content__search-form content__question" >
+                        <label for="inputQuestion"></label>
+                        <input class="input content__question-input" id="#inputQuestion" name="input-question" type="text" placeholder="Введите вопрос">
+                    </form>
                 </div>
                 <a href="#" class="skip content__link skip__link">Пропустить</a>
             </div>
     
-            
         </div>
         <footer class="footer quiz__footer">
             <div class="container footer__container">
