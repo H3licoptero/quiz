@@ -28,19 +28,23 @@
                     </div>
                 </div>
             </header>
-    
+
+            <a class="button-back" href="model-chose.html">
+                <img class="arrow-back" src="./img/main-screen/arrow-link.svg" srcset="./img/main-screen/arrow-link.svg x2" alt="button-back">
+            </a>
             <div class="content quiz__content">
-                <p class="content__text">
-                    Вас интересует конкретная модель оборудования?
+                <p class="content__text another__search-text">
+                    Опишите пожалуйста, какое оборудование Вас интересует
                 </p>
-                <div class="content__buttons">
-                    <a class="button content__button" href="model-chose.html" data-text="Да"><span>Да</span></a>
-                    <a class="button content__button" href="" data-text="Нет"><span>Нет</span></a>
+                <div class="content__buttons">  
+                    <form class="content__search-form">
+                        <button class="search__button"><img src="./img/main-screen/search.svg" alt="search"></button>
+                        <input class="content__input" id="#inputContent" name="input-content" type="text" placeholder="Введите текст">
+                    </form>
                 </div>
                 <a href="#" class="skip content__link skip__link">Пропустить</a>
             </div>
     
-            
         </div>
         <footer class="footer quiz__footer">
             <div class="container footer__container">

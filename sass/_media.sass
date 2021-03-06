@@ -23,6 +23,36 @@
     .quiz
         &__content
             max-width: 540px
+    .input
+        width: 209px
+        font-size: 14px
+        padding-left: 50px
+        height: 47px
+    .content
+        &__input
+            width: 209px
+            font-size: 14px
+            padding-left: 50px
+            height: 47px
+        &__iuput::placeholder
+            font-size: 14px
+            // height: 5px
+        &__question-input
+            max-width: 235px
+            padding-left: 20px
+    .search
+        &__button
+            left: 10px
+            top: 11px
+        &__button img
+            width: 12px
+            height: 12px
+        &__button::after
+            left: 30px
+            top: 5px
+            height: 16px
+    .button-back
+        display: none
 @media screen and ( max-width: 610px )
     .header
         &__info
@@ -71,8 +101,6 @@
             text-align: center
             margin-left: 0
     .quiz
-        &__footer  
-            display: none
         &__footer 
             height: 250px
             position: fixed
@@ -84,6 +112,7 @@
             width: 100%
             transition: all 0.5s ease
             transform: translateY(235px)
+            z-index: 2
         &__footer:hover
             transform: translateY(70px)
             transition: all 0.5s ease

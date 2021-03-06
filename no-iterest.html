@@ -28,27 +28,22 @@
                     </div>
                 </div>
             </header>
-    
-            <div class="content quiz__content">
-                <a class="button-back" href="sales-department.html">
-                    <img class="arrow-back" src="./img/main-screen/arrow-link.svg" srcset="./img/main-screen/arrow-link.svg x2" alt="button-back">
-                </a>
-                <p class="content__text">
-                    Какое оборудование Вас интересует
+
+            <a class="button-back" href="model-chose.html">
+                <img class="arrow-back" src="./img/main-screen/arrow-link.svg" srcset="./img/main-screen/arrow-link.svg x2" alt="button-back">
+            </a>
+            <div class="content quiz__content question__content">
+                <p class="content__text question__text">
+                    Пожалуйста, напишите свой вопрос и специалист свяжется с Вами в ближайшее время
                 </p>
-                <div class="content__buttons">
-                    <a class="button content__button" data-text="Узи" href="ultrasound.html"><span>УЗИ</span></a>
-                    <a class="button content__button" data-text="Нда" href="anastetic.html"><span>НДА</span></a>
-                    <a class="button content__button" data-text="Ивл" href="lung-ventilation.html"><span>ИВЛ</span></a>
-                    <a class="button content__button" data-text="Монитор пациента" href="patient-monitor.html"><span>Монитор пациента</span></a>
-                    <a class="button content__button" data-text="Дефибрилляторы" href="defibrillator.html"><span>Дефибрилляторы</span></a>
-                    <a class="button content__button" data-text="Операционные столы" href="table-operation.html"><span>Операционные столы</span></a>
-                    <a class="button content__button" data-text="Другое" href="another.html"><span>Другое</span></a>
+                <div class="content__buttons">  
+                    <form class="content__search-form content__question" >
+                        <input class="input content__question-input" id="#inputContent" name="input-content" type="text" placeholder="Введите вопрос">
+                    </form>
                 </div>
-                <a href="model.html" class="skip content__link skip__link">Пропустить</a>
+                <a href="#" class="skip content__link skip__link">Пропустить</a>
             </div>
     
-            
         </div>
         <footer class="footer quiz__footer">
             <div class="container footer__container">
@@ -84,6 +79,7 @@
                         <p class="info__support">Техподдержка</p>
                     </div>
                 </div>
+            </div>
             </div>
         </footer>
     </main>

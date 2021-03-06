@@ -18,7 +18,20 @@
     background-position: center center
     overflow-x: hidden
     z-index: 3
+.input
+    padding-left: 40px
+    width: 456px
+    height: 68px
+    background: #FFFFFF
+    border: 1px solid #E3E8EA
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07)
+    outline: none
+    border-radius: 15px  
 .content
+    &__search-form
+        position: relative
+        max-width: 677px
+        width: 100% 
     &__text 
         font-size: 36px
         text-align: center
@@ -35,6 +48,42 @@
         margin-bottom: 20px
     &__button:last-child
         margin-right: 0
+    &__input
+        position: relative
+        padding: 0 20px
+        padding-left: 111px
+        width: 407px
+        height: 68px
+        background: #FFFFFF
+        border: 1px solid #E3E8EA
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07)
+        outline: none
+        border-radius: 15px        
+    &__input::placeholder
+        color: #000
+        opacity: 0.4
+.search
+    &__button
+        position: absolute
+        background-color: transparent
+        top: 20px
+        left: 40px
+        width: 30px
+        height: 30px
+        border: none
+        opacity: 0.2
+        cursor: pointer
+        z-index: 1
+        outline: none
+    &__button::after
+        content: ''
+        position: absolute
+        top: -5px
+        left: 55px
+        height: 40px
+        width: 1px
+        background-color: #000
+        opacity: 0.8
 .button
     position: relative
     padding: 19px 40px
@@ -121,6 +170,46 @@
     &__link:hover::before
         width: 100%
         transition: all 0.5s ease
+.button
+    &-back 
+        position: absolute
+        top: 130px
+        left: 280px
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 46px
+        height: 46px
+        border: 1px solid #000000
+        box-sizing: border-box
+        border-radius: 46px
+        transition: transform 0.3s ease
+        cursor: pointer
+    &-back img
+        transform: rotate(180deg)
+        height: 18px
+        width: 14px
+    &-back:hover
+        transition: transform 0.3s ease
+        transform: scale(1.1)
+.defibrill
+    &__buttons
+        max-width: 1000px
+        width: 100%
+    &__content
+        max-width: 1000px
+        width: 100%
+.another
+    &__search-text
+        max-width: 677px
+        width: 100%
+.question
+    &__text
+        max-width: 824px
+        width: 100%
+    &__content
+        max-width: 824px
+        width: 100%
 
 
     
