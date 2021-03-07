@@ -422,8 +422,8 @@ a {
 
 .input {
   padding-left: 40px;
-  width: 456px;
-  height: 68px;
+  width: 496px;
+  height: 66px;
   background: #FFFFFF;
   border: 1px solid #E3E8EA;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
@@ -1175,7 +1175,8 @@ input[type="checkbox"]:not(:checked) + label:before {
   margin-bottom: 25px; }
 
 .form-page__select {
-  width: 500px;
+  width: 540px;
+  height: 70px;
   background-image: url(../../img/main-screen/arrow-down-black.svg);
   background-repeat: no-repeat;
   background-size: 18px 10px;
@@ -1186,6 +1187,44 @@ input[type="checkbox"]:not(:checked) + label:before {
 .form-page__text {
   max-width: 565px;
   width: 100%; }
+
+.content__wrapper {
+  max-width: 1035px; }
+
+.service__content {
+  max-width: 1035px; }
+
+.data__describe {
+  display: flex;
+  padding: 20px 40px;
+  background: #FFFFFF;
+  border: 1px solid #E3E8EA;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
+  border-radius: 15px;
+  width: 540px;
+  height: 200px;
+  resize: none; }
+
+.data__describe::placeholder {
+  opacity: 0.6; }
+
+.data__input {
+  margin-bottom: 20px; }
+
+.another-problem__header {
+  margin-bottom: 185px; }
+
+.sn-code__block {
+  display: flex;
+  width: 270px;
+  margin-right: 100px; }
+
+.sn-code__next {
+  width: 100%; }
+
+.sn-code__skip::before {
+  bottom: 10px; }
 
 @media screen and (max-width: 1600px) {
   .button-back {
@@ -1288,7 +1327,12 @@ input[type="checkbox"]:not(:checked) + label:before {
     flex-direction: row;
     max-width: 280px; }
   .application__button {
-    width: 42px; } }
+    width: 42px; }
+  .data__input {
+    margin-bottom: 30px; }
+  .data__describe {
+    width: 280px;
+    padding: 15px 20px; } }
 
 @media screen and (max-width: 610px) {
   .header__info {
@@ -1360,7 +1404,10 @@ input[type="checkbox"]:not(:checked) + label:before {
     font-size: 14px; }
   .skip__link::after {
     width: 5px;
-    height: 8px; } }
+    height: 8px; }
+  .content__text {
+    max-width: 260px;
+    font-size: 18px; } }
 
 @media screen and (max-width: 540px) {
   .quiz__header {
@@ -1497,7 +1544,11 @@ input[type="checkbox"]:not(:checked) + label:before {
     max-width: 320px; }
   .application__button {
     width: 122px;
-    margin-right: 15px; } }
+    margin-right: 15px; }
+  .sn-code__skip {
+    display: none; }
+  .sn-code__block {
+    margin-right: 0; } }
 
 @media screen and (max-width: 460px) {
   .footer__container {

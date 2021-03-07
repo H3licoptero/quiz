@@ -29,20 +29,23 @@
                 </div>
             </header>
 
-            <a class="button-back" href="model-chose.html">
-                <img class="arrow-back" src="./img/main-screen/arrow-link.svg" alt="button-back">
-            </a>
             <div class="content quiz__content">
-                <p class="content__text another__search-text">
-                    Опишите пожалуйста, какое оборудование Вас интересует
+                <a class="button-back" href="pn-code.html">
+                    <img class="arrow-back" src="./img/main-screen/arrow-link.svg" alt="button-back">
+                </a>
+                <p class="content__text">
+                    Введите серийный номер (SN) оборудования, если Вы его знаете
                 </p>
-                <div class="content__buttons">  
-                    <form class="content__search-form">
-                        <button class="search__button"><img src="./img/main-screen/search.svg" alt="search"></button>
-                        <input class="content__input" id="#inputContent" name="input-content" type="text" placeholder="Введите текст">
+                <div class="content__buttons form-page__wrapper">  
+                    <form class="content__search-form content__question form-page__form" id="form" action="#">
+                        <label for="nameMedical"></label>
+                        <input class="input content__question-input form-page__input" id="nameMedical" name="name-medical" type="text" placeholder="Введите серийный номер">
                     </form>
                 </div>
-                <a href="form.html" class="skip content__link skip__link">Пропустить</a>
+                <div class="important important__button sn-code__block">
+                    <a href="form.html" class="skip content__link skip__link sn-code__skip">Пропустить</a>
+                    <a href="form.html" class="button__next sn-code__next" data-text="Далее"><span>Далее</span></a>
+                </div>
             </div>
     
         </div>
