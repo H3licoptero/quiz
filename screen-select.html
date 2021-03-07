@@ -10,7 +10,7 @@
 <body>
     <main class="main">
         <div class="container quiz__container">
-            <header class="header quiz__header">
+            <header class="header quiz__header defibrillator__header">
                 <div class="header__container">
                     <div class="logo logo__item">
                         <a class="logo__link" href="index.html"><img src="./img/main-screen/Logo.svg" alt=""></a>
@@ -29,22 +29,44 @@
                 </div>
             </header>
 
-            <a class="button-back" href="patient-screen.html">
+            <a class="button-back" href="screen-model.html">
                 <img class="arrow-back" src="./img/main-screen/arrow-link.svg" srcset="./img/main-screen/arrow-link.svg x2" alt="button-back">
             </a>
-            <div class="content quiz__content">
-                <p class="content__text another__search-text">
-                    Какая модель Вас интересует?
+            <div class="content quiz__content defibrillator__content">
+                <p class="content__text question__text defibrillator__text">
+                    Выберите комплектацию
                 </p>
-                <div class="content__buttons">  
-                    <form class="content__search-form">
-                        <button class="search__button"><img src="./img/main-screen/search.svg" alt="search"></button>
-                        <input class="content__input" id="#inputContent" name="input-content" type="text" placeholder="Введите текст">
-                    </form>
-                </div>
-                <a href="screen-select.html" class="skip content__link skip__link">Пропустить</a>
+                <form action="#" class="content__search-form content__radio" >
+                    <div class="content__radio-item">
+                        <input class="content__radio-input" type="radio" value="Basic" id="radio-1" name="radio-content" checked>
+                        <label class="content__radio-label" for="radio-1">Базовая</label>
+                    </div>
+                    <div class="content__radio-item">
+                        <input class="content__radio-input" type="radio" value="Pacing" id="radio-2" name="radio-content">
+                        <label class="content__radio-label" for="radio-2">Блок капнометрии в основном потоке</label>
+                    </div>
+                    <div class="content__radio-item">
+                        <input class="content__radio-input" type="radio" value="EKG" id="radio-3" name="radio-content"> 
+                        <label class="content__radio-label" for="radio-3">Блок капнометрии в боковом потоке</label>
+                    </div>
+                    <div class="content__radio-item">
+                        <input class="content__radio-input" type="radio" value="NIAD" id="radio-4" name="radio-content">
+                        <label class="content__radio-label" for="radio-4">Блок капнометрии в микропотоке</label>
+                    </div>
+                    <div class="content__radio-item">
+                        <input class="content__radio-input" type="radio" value="SPO2" id="radio-5" name="radio-content">
+                        <label class="content__radio-label" for="radio-5">Модуль SPO2</label>
+                    </div>
+                </form>
             </div>
-    
+            <div class="defibrillator__block">
+                <div class="defibrillator__price">
+                    <span>Примерная цена</span>
+                    <p>500 тыс. руб.</p> 
+                </div>
+                <a href="#" class="button__next" data-text="Далее"><span>Далее</span></a>
+            </div>
+            
         </div>
         <footer class="footer quiz__footer">
             <div class="container footer__container">

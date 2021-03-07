@@ -10,7 +10,7 @@
 <body>
     <main class="main">
         <div class="container quiz__container">
-            <header class="header quiz__header">
+            <header class="header quiz__header form__header">
                 <div class="header__container">
                     <div class="logo logo__item">
                         <a class="logo__link" href="index.html"><img src="./img/main-screen/Logo.svg" alt=""></a>
@@ -28,21 +28,30 @@
                     </div>
                 </div>
             </header>
-
-            <a class="button-back" href="patient-screen.html">
-                <img class="arrow-back" src="./img/main-screen/arrow-link.svg" srcset="./img/main-screen/arrow-link.svg x2" alt="button-back">
-            </a>
-            <div class="content quiz__content">
-                <p class="content__text another__search-text">
-                    Какая модель Вас интересует?
+            <div class="content quiz__content question__content screen__content">
+                <p class="content__text question__text screen__text">
+                    Оставьте Ваши данные, что бы мы могли связаться с Вами
                 </p>
                 <div class="content__buttons">  
-                    <form class="content__search-form">
-                        <button class="search__button"><img src="./img/main-screen/search.svg" alt="search"></button>
-                        <input class="content__input" id="#inputContent" name="input-content" type="text" placeholder="Введите текст">
+                    <form class="content__search-form content__question" action="#">
+                        <label for="inputName"></label>
+                        <input class="input content__question-input" id="#inputName" name="input-name" type="name" placeholder="Имя">
+                        <label for="inputPhone"></label>
+                        <input class="input content__question-input" id="#inputPhone" name="input-phone" type="phone" placeholder="Телефон">
+                        <label for="inputEmail"></label>
+                        <input class="input content__question-input" id="#inputEmail" name="input-email" type="email" placeholder="E-mail">
+                        <select class="form__select input" name="city" id="">
+                            <option value="">Город</option>
+                            <option value="">Город</option>
+                            <option value="">Город</option>
+                            <option value="">Город</option>
+                            <option value="">Город</option>
+                        </select>
                     </form>
                 </div>
-                <a href="screen-select.html" class="skip content__link skip__link">Пропустить</a>
+                <div class="important important__button defibrillator__block">
+                    <a href="#" class="button__next" data-text="Далее"><span>Далее</span></a>
+                </div>
             </div>
     
         </div>

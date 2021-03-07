@@ -28,23 +28,33 @@
                     </div>
                 </div>
             </header>
-
-            <a class="button-back" href="patient-screen.html">
-                <img class="arrow-back" src="./img/main-screen/arrow-link.svg" srcset="./img/main-screen/arrow-link.svg x2" alt="button-back">
-            </a>
-            <div class="content quiz__content">
-                <p class="content__text another__search-text">
-                    Какая модель Вас интересует?
+            <div class="content quiz__content alternate__content">
+                <a class="button-back" href="ultrasound.html">
+                    <img class="arrow-back" src="./img/main-screen/arrow-link.svg" srcset="./img/main-screen/arrow-link.svg x2" alt="button-back">
+                </a>
+                <p class="content__text">
+                    Выберите применение оборудования
                 </p>
-                <div class="content__buttons">  
-                    <form class="content__search-form">
-                        <button class="search__button"><img src="./img/main-screen/search.svg" alt="search"></button>
-                        <input class="content__input" id="#inputContent" name="input-content" type="text" placeholder="Введите текст">
-                    </form>
+                <div class="content__buttons content__buttons-variant">
+                    <a class="button content__button" href="ultrasound-select.html" data-text="Для АК/ГИН"><span>Для АК/ГИН</span></a>
+                    <a class="button content__button" href="ultrasound-select.html" data-text="Для кардиологии и сосудов"><span>Для кардиологии и сосудов</span></a>
+                    <a class="button content__button universal__button" href="ultrasound-select.html" data-text="Универсальный"><span>Универсальный</span>
+                        <img class="universal__image" src="./img/main-screen/info-icon.svg" alt="info">
+                    </a>
+                    <div class="info__title">
+                        <p>Info info info info info info</p>
+                        <button class="button__close info__close">
+                            <img class="close" src="./img/main-screen/close.svg" alt="close">
+                        </button>
+                    </div>
+                        <a class="button content__button" href="ultrasound-select.html" data-text="Специализированный"><span>Специализированный</span></a>
+                    </div>
+                <div class="important important__button defibrillator__block">
+                    <a href="ultrasound-select.html" class="button__next" data-text="Далее"><span>Далее</span></a>
                 </div>
-                <a href="screen-select.html" class="skip content__link skip__link">Пропустить</a>
             </div>
     
+            
         </div>
         <footer class="footer quiz__footer">
             <div class="container footer__container">
