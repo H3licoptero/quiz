@@ -22,25 +22,28 @@
                     <div class="menu header__menu">
                         <p class="menu__text">Меню</p>
                         <div class="burger menu__burger">
-                            <div class="burger__item burger__item-top"><img src="./img/main-screen/burger-item.svg" alt="burger-item"></div>
-                            <div class="burger__item burger__item-bottom"><img src="./img/main-screen/burger-item.svg" alt="burger-item"></div>
+                            <div class="burger__item burger__item-top"><img src="./img/main-screen/burger-item.svg" srcset="./img/main-screen/burger-item.svg 2x" alt="burger-item"></div>
+                            <div class="burger__item burger__item-bottom"><img src="./img/main-screen/burger-item.svg" srcset="./img/main-screen/burger-item.svg 2x" alt="burger-item"></div>
                         </div>
                     </div>
                 </div>
             </header>
-    
+
             <div class="content quiz__content">
                 <p class="content__text">
-                    Привет, я MedBot, сейчас мы вместе быстро определим и решим вашу задачу. С каким отделом вас соединить?
+                    Введите серийный номер (SN) оборудования, если Вы его знаете
                 </p>
-                <div class="content__buttons">
-                    <a class="button content__button" data-text="Отдел сервиса" href=""><span>Отдел сервиса</span></a>
-                    <a class="button content__button" data-text="Отдел продаж" href="sales-department.html"><span>Отдел продаж</span></a>
+                <div class="content__buttons form-page__wrapper">  
+                    <form class="content__search-form content__question form-page__form" id="form" action="#">
+                        <label for="nameMedical"></label>
+                        <input class="input content__question-input form-page__input" id="#nameMedical" name="name-medical" type="text" placeholder="Введите серийный номер">
+                    </form>
                 </div>
-                <a href="model.html" class="skip content__link skip__link">Пропустить</a>
+                <div class="important important__button defibrillator__block">
+                    <a href="application.html" class="button__next" data-text="Далее"><span>Далее</span></a>
+                </div>
             </div>
     
-            
         </div>
         <footer class="footer quiz__footer">
             <div class="container footer__container">
@@ -68,7 +71,7 @@
                     <a class="footer__social-block footer__social-item" href="#" data-text="Viber">
                         <img src="./img/main-screen/viber.svg" alt="viber">
                         <span>Viber</span></a>
-                    <a class="footer__social-block footer__social-item" href="important.html" data-text="Online-чат">
+                    <a class="footer__social-block footer__social-item" href="#" data-text="Online-чат">
                         <img src="./img/main-screen/chat.svg" alt="chat">
                         <span>Online-чат</span></a>
                     <div class="info header__info footer__info">
@@ -76,6 +79,7 @@
                         <p class="info__support">Техподдержка</p>
                     </div>
                 </div>
+            </div>
             </div>
         </footer>
     </main>

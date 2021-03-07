@@ -738,6 +738,19 @@ input[type="radio"]:checked + label:after {
 .defibrillator__price p {
   font-size: 24px; }
 
+.application__text {
+  margin-bottom: 25px; }
+
+.application__subscribe {
+  margin-bottom: 45px;
+  font-size: 24px; }
+
+.final-page__header {
+  margin-bottom: 292px; }
+
+.final-page__text {
+  margin-bottom: 50px; }
+
 .quiz__footer {
   position: fixed;
   display: flex;
@@ -1150,6 +1163,30 @@ input[type="checkbox"]:not(:checked) + label:before {
 .main__package {
   height: 140vh; }
 
+.form-page__header {
+  margin-bottom: 73px; }
+
+.form-page__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.form-page__input {
+  margin-bottom: 25px; }
+
+.form-page__select {
+  width: 500px;
+  background-image: url(../../img/main-screen/arrow-down-black.svg);
+  background-repeat: no-repeat;
+  background-size: 18px 10px;
+  background-position: 95% 52%;
+  appearance: none;
+  color: rgba(0, 0, 0, 0.6); }
+
+.form-page__text {
+  max-width: 565px;
+  width: 100%; }
+
 @media screen and (max-width: 1600px) {
   .button-back {
     left: 135px; } }
@@ -1236,7 +1273,22 @@ input[type="checkbox"]:not(:checked) + label:before {
   .defibrillator__price span {
     justify-content: center; }
   .actual__input {
-    width: 248px; } }
+    width: 248px; }
+  .form-page__select, .form-page__input {
+    width: 259px; }
+  .form-page__select {
+    padding-left: 20px;
+    background-size: 12px 7px;
+    background-position: 93% 52%; }
+  .form-page__text {
+    max-width: 350px; }
+  .application__subscribe {
+    font-size: 16px; }
+  .application__buttons {
+    flex-direction: row;
+    max-width: 280px; }
+  .application__button {
+    width: 42px; } }
 
 @media screen and (max-width: 610px) {
   .header__info {
@@ -1437,7 +1489,15 @@ input[type="checkbox"]:not(:checked) + label:before {
     background: #ffffff;
     top: -36px;
     right: 0px;
-    z-index: 2; } }
+    z-index: 2; }
+  .application__subscribe {
+    font-size: 16px; }
+  .application__buttons {
+    flex-direction: row;
+    max-width: 320px; }
+  .application__button {
+    width: 122px;
+    margin-right: 15px; } }
 
 @media screen and (max-width: 460px) {
   .footer__container {
@@ -1497,7 +1557,15 @@ input[type="checkbox"]:not(:checked) + label:before {
     position: relative;
     top: 5px; }
   .defibrillator__content {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .application__subscribe {
+    font-size: 16px; }
+  .application__buttons {
+    flex-direction: row;
+    max-width: 320px; }
+  .application__button {
+    width: 122px;
+    margin-right: 15px; } }
 
 @media screen and (max-width: 380px) {
   .footer__social-item {
@@ -1548,4 +1616,12 @@ input[type="checkbox"]:not(:checked) + label:before {
   .support__link {
     margin: auto;
     position: relative;
-    top: 5px; } }
+    top: 5px; }
+  .application__subscribe {
+    font-size: 16px; }
+  .application__buttons {
+    flex-direction: row;
+    max-width: 320px; }
+  .application__button {
+    width: 122px;
+    margin-right: 15px; } }

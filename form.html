@@ -10,7 +10,7 @@
 <body>
     <main class="main">
         <div class="container quiz__container">
-            <header class="header quiz__header form__header">
+            <header class="header quiz__header form-page__header">
                 <div class="header__container">
                     <div class="logo logo__item">
                         <a class="logo__link" href="index.html"><img src="./img/main-screen/Logo.svg" alt=""></a>
@@ -22,35 +22,36 @@
                     <div class="menu header__menu">
                         <p class="menu__text">Меню</p>
                         <div class="burger menu__burger">
-                            <div class="burger__item burger__item-top"><img src="./img/main-screen/burger-item.svg" srcset="./img/main-screen/burger-item.svg 2x" alt="burger-item"></div>
-                            <div class="burger__item burger__item-bottom"><img src="./img/main-screen/burger-item.svg" srcset="./img/main-screen/burger-item.svg 2x" alt="burger-item"></div>
+                            <div class="burger__item burger__item-top"><img src="./img/main-screen/burger-item.svg" alt="burger-item"></div>
+                            <div class="burger__item burger__item-bottom"><img src="./img/main-screen/burger-item.svg" alt="burger-item"></div>
                         </div>
                     </div>
                 </div>
             </header>
-            <div class="content quiz__content question__content screen__content">
-                <p class="content__text question__text screen__text">
+
+            <div class="content quiz__content form-page__content">
+                <p class="content__text form-page__text">
                     Оставьте Ваши данные, что бы мы могли связаться с Вами
                 </p>
-                <div class="content__buttons">  
-                    <form class="content__search-form content__question" action="#">
+                <div class="content__buttons form-page__wrapper">  
+                    <form class="content__search-form content__question form-page__form" id="form" action="#">
                         <label for="inputName"></label>
-                        <input class="input content__question-input" id="#inputName" name="input-name" type="name" placeholder="Имя">
+                        <input class="input content__question-input form-page__input" id="inputName" name="input-name" type="text" placeholder="Имя">
                         <label for="inputPhone"></label>
-                        <input class="input content__question-input" id="#inputPhone" name="input-phone" type="phone" placeholder="Телефон">
+                        <input class="input content__question-input form-page__input" id="inputPhone" name="input-phone" type="tel" placeholder="Телефон">
                         <label for="inputEmail"></label>
-                        <input class="input content__question-input" id="#inputEmail" name="input-email" type="email" placeholder="E-mail">
-                        <select class="form__select input" name="city" id="">
-                            <option value="">Город</option>
-                            <option value="">Город</option>
-                            <option value="">Город</option>
-                            <option value="">Город</option>
-                            <option value="">Город</option>
+                        <input class="input content__question-input form-page__input" id="inputEmail" name="input-email" type="email" placeholder="E-mail">
+                        <select class="form-page__select input" name="city" id="selectForm" form="form">
+                            <option value="Выберите город" selected>Выберите город</option>
+                            <option value="Город">Город</option>
+                            <option value="Город">Город</option>
+                            <option value="Город">Город</option>
+                            <option value="Город">Город</option>
                         </select>
                     </form>
                 </div>
                 <div class="important important__button defibrillator__block">
-                    <a href="#" class="button__next" data-text="Далее"><span>Далее</span></a>
+                    <a href="medical-institution.html" class="button__next" data-text="Далее"><span>Далее</span></a>
                 </div>
             </div>
     
@@ -89,7 +90,6 @@
                         <p class="info__support">Техподдержка</p>
                     </div>
                 </div>
-            </div>
             </div>
         </footer>
     </main>
