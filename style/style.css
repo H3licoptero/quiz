@@ -748,7 +748,8 @@ input[type="radio"]:checked + label:after {
   bottom: -66px;
   width: 100%;
   transition: all 0.5s ease;
-  transform: translateY(60px); }
+  transform: translateY(60px);
+  z-index: 3; }
 
 .quiz__footer:hover {
   transform: translateY(-60px);
