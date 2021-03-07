@@ -3,12 +3,7 @@
         margin-bottom: 74px
 .main
     &__important
-        height: 120vh
-.content
-    &__checkbox
-        font-size: 16px
-    &__checkbox-item
-        margin-bottom: 20px
+        height: 140vh
 input[type="checkbox"]:checked, 
 input[type="checkbox"]:not(:checked), 
     position: absolute
@@ -17,7 +12,7 @@ input[type="checkbox"]:checked + label,
 input[type="checkbox"]:not(:checked) + label
     display: inline-block
     position: relative
-    padding-left: 28px
+    padding-left: 35px
     line-height: 20px
     cursor: pointer
 input[type="checkbox"]:checked + label:before, 
@@ -50,7 +45,6 @@ input[type="checkbox"]:not(:checked) + label:after
     border-radius: 1px
     border-left: 4px solid $select
     border-bottom: 4px solid $select
-    border-radius: 25px 
     -webkit-transform: rotate(-45deg)
     -moz-transform: rotate(-45deg)
     -o-transform: rotate(-45deg)
@@ -63,4 +57,82 @@ input[type="checkbox"]:checked + label:after
 input[type="checkbox"]:checked + label:before
 input[type="checkbox"]:not(:checked) + label:before
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.06)
-
+.content
+    &__checkbox
+        font-size: 16px
+    &__checkbox-item
+        margin-bottom: 20px
+.checkbox
+    &__wrapper
+        margin-bottom: 30px
+    &__wrapper:last-child
+        margin-bottom: 0
+.form
+    &__content
+        margin-bottom: 50px
+.button
+    &__next
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: auto
+        border: 1px solid $black
+        border-radius: 46px
+        max-width: 117px
+        height: 45px
+        background-color: transparent
+        overflow: hidden
+        z-index: 2
+    &__next::before
+        content: attr(data-text)
+        position: absolute
+        display: flex
+        align-items: center
+        justify-content: center
+        bottom: 0
+        right: 0
+        height: 0
+        width: 100%
+        color: $white
+        background-color: transparent
+        transition: all 0.5s ease
+        opacity: 1
+        z-index: 1
+        overflow: hidden
+    &__next::after
+        content: attr(data-text)
+        position: absolute
+        display: flex
+        align-items: center
+        justify-content: center
+        top: 0
+        right: 0
+        height: 100%
+        width: 100%
+        color: $textColor
+        background-color: transparent
+        transition: all 0.5s ease
+        opacity: 1
+        z-index: 1
+        overflow: hidden
+    &__next:hover::before
+        background: $black
+        color: $white
+        bottom: 0
+        height: 100%
+        transition: all 0.5s ease
+        opacity: 1
+    &__next:hover::after
+        background: transparent
+        color: $textColor
+        transform: translateY(-10px)
+        top: 0
+        height: 0
+        transition: all 0.5s ease
+        opacity: 0
+.button
+    &__next:hover span, .button__next span
+        opacity: 0 
+.button__next span
+    opacity: 0

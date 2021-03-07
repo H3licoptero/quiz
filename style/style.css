@@ -571,7 +571,7 @@ input[type="radio"]:checked + label:after {
   overflow: hidden;
   z-index: 2; }
 
-.button:before {
+.button::before {
   content: attr(data-text);
   position: absolute;
   display: flex;
@@ -738,16 +738,6 @@ input[type="radio"]:checked + label:after {
 .defibrillator__price p {
   font-size: 24px; }
 
-.defibrillator__skip {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  border: 1px solid #1C1C1C;
-  border-radius: 46px;
-  max-width: 117px;
-  height: 45px; }
-
 .quiz__footer {
   position: fixed;
   display: flex;
@@ -897,13 +887,7 @@ input[type="radio"]:checked + label:after {
   margin-bottom: 74px; }
 
 .main__important {
-  height: 120vh; }
-
-.content__checkbox {
-  font-size: 16px; }
-
-.content__checkbox-item {
-  margin-bottom: 20px; }
+  height: 140vh; }
 
 input[type="checkbox"]:checked,
 input[type="checkbox"]:not(:checked) {
@@ -914,7 +898,7 @@ input[type="checkbox"]:checked + label,
 input[type="checkbox"]:not(:checked) + label {
   display: inline-block;
   position: relative;
-  padding-left: 28px;
+  padding-left: 35px;
   line-height: 20px;
   cursor: pointer; }
 
@@ -951,7 +935,6 @@ input[type="checkbox"]:not(:checked) + label:after {
   border-radius: 1px;
   border-left: 4px solid #75C36E;
   border-bottom: 4px solid #75C36E;
-  border-radius: 25px;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
@@ -967,6 +950,129 @@ input[type="checkbox"]:checked + label:after {
 input[type="checkbox"]:not(:checked) + label:before {
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.06); }
 
+.content__checkbox {
+  font-size: 16px; }
+
+.content__checkbox-item {
+  margin-bottom: 20px; }
+
+.checkbox__wrapper {
+  margin-bottom: 30px; }
+
+.checkbox__wrapper:last-child {
+  margin-bottom: 0; }
+
+.form__content {
+  margin-bottom: 50px; }
+
+.button__next {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: 1px solid #1C1C1C;
+  border-radius: 46px;
+  max-width: 117px;
+  height: 45px;
+  background-color: transparent;
+  overflow: hidden;
+  z-index: 2; }
+
+.button__next::before {
+  content: attr(data-text);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  color: #ffffff;
+  background-color: transparent;
+  transition: all 0.5s ease;
+  opacity: 1;
+  z-index: 1;
+  overflow: hidden; }
+
+.button__next::after {
+  content: attr(data-text);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  color: #000000;
+  background-color: transparent;
+  transition: all 0.5s ease;
+  opacity: 1;
+  z-index: 1;
+  overflow: hidden; }
+
+.button__next:hover::before {
+  background: #1C1C1C;
+  color: #ffffff;
+  bottom: 0;
+  height: 100%;
+  transition: all 0.5s ease;
+  opacity: 1; }
+
+.button__next:hover::after {
+  background: transparent;
+  color: #000000;
+  transform: translateY(-10px);
+  top: 0;
+  height: 0;
+  transition: all 0.5s ease;
+  opacity: 0; }
+
+.button__next:hover span, .button .button__next span {
+  opacity: 0; }
+
+.button__next span {
+  opacity: 0; }
+
+.model-actual__header {
+  margin-bottom: 160px; }
+
+.model-actual__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 680px;
+  width: 100%;
+  margin: auto; }
+
+.model-actual__buttons {
+  margin-bottom: 20px; }
+
+.model-actual__form {
+  height: 440px;
+  overflow-y: scroll; }
+
+.model-actual__form::-webkit-scrollbar {
+  width: 2px;
+  background-color: #E2E2E2; }
+
+.model-actual__form::-webkit-scrollbar-thumb {
+  width: 4px;
+  background-color: #ACACAC; }
+
+.actual__input {
+  width: 517px; }
+
+.main__model-actual {
+  height: 130vh; }
+
+@media screen and (max-width: 1600px) {
+  .button-back {
+    left: 135px; } }
+
 @media screen and (max-width: 1024px) {
   body {
     font-size: 14px; }
@@ -980,6 +1086,8 @@ input[type="checkbox"]:not(:checked) + label:before {
     height: 8px; } }
 
 @media screen and (max-width: 980px) {
+  .main__important {
+    height: 160vh; }
   .support__link {
     margin: auto;
     position: relative;
@@ -1022,7 +1130,9 @@ input[type="checkbox"]:not(:checked) + label:before {
     margin: auto;
     margin-bottom: 40px; }
   .defibrillator__price span {
-    justify-content: center; } }
+    justify-content: center; }
+  .actual__input {
+    width: 248px; } }
 
 @media screen and (max-width: 610px) {
   .header__info {

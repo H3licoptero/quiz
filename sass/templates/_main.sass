@@ -73,14 +73,12 @@
         margin-bottom: 0
     &__radio-label
         padding-left: 5px
-    // &__radio-input
 input[type="radio"]:checked, 
 input[type="radio"]:not(:checked) 
     position: absolute
     left: -9999px
 input[type="radio"]:checked + label, 
 input[type="radio"]:not(:checked) + label 
-
     position: relative
     padding-left: 35px
     line-height: 20px
@@ -150,7 +148,7 @@ input[type="radio"]:checked + label:after
     color: $black
     overflow: hidden
     z-index: 2
-.button:before
+.button::before
     content: attr(data-text)
     position: absolute
     display: flex
@@ -299,15 +297,4 @@ input[type="radio"]:checked + label:after
         margin-bottom: 5px
     &__price p
         font-size: 24px
-    &__skip
-        display: flex
-        justify-content: center
-        align-items: center
-        margin: auto
-        border: 1px solid $black
-        border-radius: 46px
-        max-width: 117px
-        height: 45px
-
-
     
