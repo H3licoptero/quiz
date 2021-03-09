@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <main class="main">
+    <main class="main main__model-actual main__package">
         <div class="container quiz__container">
-            <header class="header quiz__header">
+            <header class="header quiz__header package__header">
                 <div class="header__container">
                     <div class="logo logo__item">
                         <a class="logo__link" href="index.html"><img src="./img/main-screen/Logo.svg" alt=""></a>
@@ -29,29 +29,33 @@
                 </div>
             </header>
 
-            <a class="button-back" href="ultrasound.html">
+            <a class="button-back" href="service.html">
                 <img class="arrow-back" src="./img/main-screen/arrow-link.svg" alt="button-back">
             </a>
-            <div class="content quiz__content search__content">
-                <p class="content__text another__search-text">
-                    Какая модель Вас интересует?
+            <div class="content quiz__content defibrillator__content form__content">
+                <span class="cause__tag">База знаний</span>
+                <p class="content__text question__text form__text defibrillator__text">
+                    Возможные причины:
                 </p>
-                <div class="content__buttons">  
-                    <form class="content__search-form">
-                        <button class="search__button"><img src="./img/main-screen/search.svg" alt="search"></button>
-                        <input class="content__input" id="#inputContent" name="input-content" type="text" placeholder="Введите текст" autocomplete="off">
-                    </form>
+                <p class="cause__subscribe">Проблема с апертурой (излучающая поверхность)</p>
+                <div class="cause__list">
+                    <p class="cause__paragraph">1. <a class="cause__item">Гель под апертуру</a></p>
+                    <p class="cause__paragraph">2. <a class="cause__item">Отслоилась линза</a></p>
+                    <figure><img src="./img/main-screen/cause-image-1.jpg" alt="">
+                        <p class="cause__paragraph">3. <a class="cause__item">Окисление</a></p>
+                    </figure>
+                    <figure><img src="./img/main-screen/cause-image-1.jpg" alt="">
+                            <p class="cause__paragraph">4. <a class="cause__item">Со временем</a></p>
+                    </figure>
                 </div>
-                <div class="search__list">
-                    <!-- <li  class="search__list-item">Ультразвуковая система GE Vscan Access</li>
-                    <li class="search__list-item">Ультразвуковая система GE Vscan Access</li>
-                    <li class="search__list-item">Ультразвуковая система GE Vscan Access</li>
-                    <li class="search__list-item">Ультразвуковая система GE Vscan Access</li>
-                    <li class="search__list-item">Ультразвуковая система GE Vscan Access</li> -->
-                </div>
-                <a href="package-example.html" class="skip content__link skip__link">Пропустить</a>
             </div>
-    
+            
+            <div class="important important__button ultra-problems__block">
+                <div class="ultra-problems__wrapper">
+                    <a href="form.html" class="button__next sn-code__next" data-text="Далее"><span>Далее</span></a>
+                </div>
+            </div>
+            
         </div>
         <footer class="footer quiz__footer">
             <div class="container footer__container">
@@ -90,7 +94,5 @@
             </div>
         </footer>
     </main>
-    <script src="script/hint.js"></script>
-    <script src="script/script.js"></script>
 </body>
 </html>
