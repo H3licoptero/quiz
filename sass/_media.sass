@@ -41,6 +41,8 @@
             opacity: 1
     .search__list 
         top: 145px
+    .button-back 
+       left: 95px
 @media screen and ( max-width: 980px )
     .main
         &__important
@@ -71,7 +73,6 @@
             height: 47px
         &__iuput::placeholder
             font-size: 14px
-            // height: 5px
         &__question-input
             max-width: 235px
             padding-left: 20px
@@ -123,11 +124,47 @@
         &__describe
             width: 280px
             padding: 15px 20px
-    .search__list 
+    .search
+        &__list 
         top: 125px
         width: 259px
         padding-left: 10px
         padding-right: 10px
+    .cause
+        &__paragraph
+            margin-bottom: 0
+        &__figure
+            position: relative
+            border-radius: 6px
+            width: 218px
+            margin-bottom: 15px
+        &__figure-img
+            width: 218px
+            object-fit: contain
+        &__figure--active
+            width: 218px
+            height: 152px
+        &__plate
+            height: 52px
+            bottom: 0
+            overflow: visible
+        &__search-img
+            position: absolute
+            bottom: 52px
+            left: 90px
+            z-index: 2
+            backdrop-filter: blur(4px)
+        &__figure:hover &__plate
+            height: 52px
+    .cable
+        &__plate-text
+            margin-left: 10px
+    .interest
+        &__paragraph, &__item
+            // max-width: 320px
+            white-space: nowrap
+            text-overflow: ellipsis
+            overflow: hidden
 @media screen and ( max-width: 610px )
     .header
         &__info

@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <main class="main">
+    <main class="main main__model-actual main__package main__cause">
         <div class="container quiz__container">
-            <header class="header quiz__header">
+            <header class="header quiz__header package__header">
                 <div class="header__container">
                     <div class="logo logo__item">
                         <a class="logo__link" href="index.html"><img src="./img/main-screen/Logo.svg" alt=""></a>
@@ -28,20 +28,34 @@
                     </div>
                 </div>
             </header>
-            <div class="content quiz__content">
-                <p class="content__text application__text">
-                    Ваша заявка передана в отдел, ожидайте звонка от специалиста
+
+            <a class="button-back" href="service.html">
+                <img class="arrow-back" src="./img/main-screen/arrow-link.svg" alt="button-back">
+            </a>
+            <div class="content quiz__content defibrillator__content form__content">
+                <span class="cause__tag">База знаний</span>
+                <p class="content__text question__text form__text defibrillator__text">
+                    Возможные причины:
                 </p>
-                <p class="application__subscribe">Я могу быть еще чем-то полезен?</p>
-                <div class="content__buttons application__buttons">
-                    <a class="button content__button application__button" href="model-chose.html" data-text="Да"><span>Да</span></a>
-                    <a class="button content__button application__button" href="final-page.html" data-text="Нет"><span>Нет</span></a>
-                </div>
-                <div class="important important__button defibrillator__block">
-                    <a href="final-page.html" class="button__next" data-text="Далее"><span>Далее</span></a>
+                <p class="cause__subscribe">Проблема с кабелем</p>
+                <div class="cause__list">
+                    <div class="cause__block">
+                        <p class="cause__paragraph">1. <a class="cause__item">Механическое повреждение</a></p>
+                        <div class="cause__figure"><img class="cause__figure-img" src="./img/main-screen/cause-image-1.jpg" alt="image">
+                            <div class="cause__plate">
+                                <p class="cause__plate-text cable__plate-text">1. <a class="cause__plate-link">Механическое повреждение</a></p>
+                                <div class="cause__search-img">
+                                    <img class="cause__loupe" src="./img/main-screen/loupe-cause.svg" alt="icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-    
+            
+            <div class="important important__button defibrillator__block">
+                <a href="form.html" class="button__next" data-text="Далее"><span>Далее</span></a>
+            </div>
             
         </div>
         <footer class="footer quiz__footer">
@@ -81,5 +95,6 @@
             </div>
         </footer>
     </main>
+    <script src="script/cause.js"></script>
 </body>
 </html>

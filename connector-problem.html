@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <main class="main main__model-actual main__package">
+    <main class="main main__model-actual main__package main__cause">
         <div class="container quiz__container">
             <header class="header quiz__header package__header">
                 <div class="header__container">
@@ -37,23 +37,24 @@
                 <p class="content__text question__text form__text defibrillator__text">
                     Возможные причины:
                 </p>
-                <p class="cause__subscribe">Проблема с апертурой (излучающая поверхность)</p>
+                <p class="cause__subscribe">Проблема с коннектером</p>
                 <div class="cause__list">
-                    <p class="cause__paragraph">1. <a class="cause__item">Гель под апертуру</a></p>
-                    <p class="cause__paragraph">2. <a class="cause__item">Отслоилась линза</a></p>
-                    <figure><img src="./img/main-screen/cause-image-1.jpg" alt="">
-                        <p class="cause__paragraph">3. <a class="cause__item">Окисление</a></p>
-                    </figure>
-                    <figure><img src="./img/main-screen/cause-image-1.jpg" alt="">
-                            <p class="cause__paragraph">4. <a class="cause__item">Со временем</a></p>
-                    </figure>
+                    <div class="cause__block">
+                        <p class="cause__paragraph">1. <a class="cause__item">Заломаны контакты</a></p>
+                        <div class="cause__figure"><img class="cause__figure-img" src="./img/main-screen/cause-image-1.jpg" alt="image">
+                            <div class="cause__plate">
+                                <p class="cause__plate-text cable__plate-text">1. <a class="cause__plate-link">Заломаны контакты</a></p>
+                                <div class="cause__search-img">
+                                    <img class="cause__loupe" src="./img/main-screen/loupe-cause.svg" alt="icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div class="important important__button ultra-problems__block">
-                <div class="ultra-problems__wrapper">
-                    <a href="form.html" class="button__next sn-code__next" data-text="Далее"><span>Далее</span></a>
-                </div>
+            <div class="important important__button defibrillator__block">
+                <a href="form.html" class="button__next" data-text="Далее"><span>Далее</span></a>
             </div>
             
         </div>
@@ -94,5 +95,6 @@
             </div>
         </footer>
     </main>
+    <script src="script/cause.js"></script>
 </body>
 </html>
