@@ -32,17 +32,18 @@
             <a class="button-back" href="info.html">
                 <img class="arrow-back" src="./img/main-screen/arrow-link.svg" alt="button-back">
             </a>
-            <div class="content quiz__content">
+            <div class="content quiz__content search__content">
                 <p class="content__text another__search-text">
                     Введите данные
                 </p>
                 <div class="content__buttons">  
-                    <form class="content__search-form">
-                        <button class="search__button"><img src="./img/main-screen/search.svg" alt="search"></button>
-                        <input class="content__input data__input" id="#inputContent" name="input-content" type="text" placeholder="Модель оборудования">
+                    <form class="content__search-form" method="POST" action="#">
+                        <button class="search__button" type="submit"><img src="./img/main-screen/search.svg" alt="search"></button>
+                        <input class="content__input data__input" id="#inputContent" name="input-content" type="text" placeholder="Модель оборудования" autocomplete="off">
                         <textarea class="data__describe" name="describe-field" id="describeWork" cols="30" rows="10" placeholder="Описание работ"></textarea>
                     </form>
                 </div>
+                <div class="search__list"></div>
                 <a href="form.html" class="skip content__link skip__link">Пропустить</a>
             </div>
     
@@ -84,5 +85,7 @@
             </div>
         </footer>
     </main>
+    <script src="script/hint.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
