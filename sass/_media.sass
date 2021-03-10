@@ -39,10 +39,14 @@
             height: 0
         &__button span
             opacity: 1
-    .search__list 
-        top: 145px
+    .search
+        &__list 
+            top: 145px
     .button-back 
        left: 95px
+    .footer
+        &__logo-link
+            left: 30px
 @media screen and ( max-width: 980px )
     .main
         &__important
@@ -165,6 +169,13 @@
             white-space: nowrap
             text-overflow: ellipsis
             overflow: hidden
+    .search
+        &__list 
+            top: 125px
+            max-width: 199px
+    .another
+        &__search-list
+            top: 150px
 @media screen and ( max-width: 610px )
     .header
         &__info
@@ -246,6 +257,9 @@
         &__text
             max-width: 260px
             font-size: 18px
+    .another
+        &__search-list
+            top: 135px
 @media screen and ( max-width: 540px )
     .quiz
         &__header
