@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <main class="main">
+    <main class="main main__important">
         <div class="container quiz__container">
-            <header class="header quiz__header">
+            <header class="header quiz__header important__header">
                 <div class="header__container">
                     <div class="logo logo__item">
                         <a class="logo__link" href="index.html"><img src="./img/main-screen/Logo.svg" alt=""></a>
@@ -28,26 +28,37 @@
                     </div>
                 </div>
             </header>
-    
-            <div class="content quiz__content">
-                <a class="button-back" href="service.html">
-                    <img class="arrow-back" src="./img/main-screen/arrow-link.svg" alt="button-back">
-                </a>
-                <p class="content__text">
-                    Какое оборудование Вас интересует
+
+            <a class="button-back" href="repair.html">
+                <img class="arrow-back" src="./img/main-screen/arrow-link.svg" alt="button-back">
+            </a>
+            <div class="content quiz__content defibrillator__content form__content">
+                <p class="content__text question__text form__text defibrillator__text">
+                    С чем связана Ваша проблема?
                 </p>
-                <div class="content__buttons">
-                    <a class="button content__button" data-text="Узи" href="repair-problem1.html"><span>УЗИ</span></a>
-                    <a class="button content__button" data-text="Нда" href="repair-problems2.html"><span>НДА</span></a>
-                    <a class="button content__button" data-text="Ивл" href="repair-problems3.html"><span>ИВЛ</span></a>
-                    <a class="button content__button" data-text="Монитор пациента" href="repair-problems4.html"><span>Монитор пациента</span></a>
-                    <a class="button content__button" data-text="Дефибрилляторы" href="defibrill-problems.html"><span>Дефибрилляторы</span></a>
-                    <a class="button content__button" data-text="Операционные столы" href="repair-problems5.html"><span>Операционные столы</span></a>
-                    <a class="button content__button" data-text="Другое" href="another-problem.html"><span>Другое</span></a>
-                </div>
-                <a href="model.html" class="skip content__link skip__link">Пропустить</a>
+                <form action="#" class="content__search-form content__checkbox">
+                    <div class="content__checkbox-item">
+                        <input class="content__checkbox-input" type="checkbox" id="checkbox-1" name="checkbox-content" checked>
+                        <label class="content__checkbox-label" for="checkbox-1">Проблема с апертурой</label>
+                    </div>
+                    <div class="content__checkbox-item">
+                        <input class="content__checkbox-input" type="checkbox" id="checkbox-2" name="checkbox-content">
+                        <label class="content__checkbox-label" for="checkbox-2">Проблема с пьезокристаллами</label>
+                    </div>
+                    <div class="content__checkbox-item">
+                        <input class="content__checkbox-input" type="checkbox"  id="checkbox-3" name="checkbox-content"> 
+                        <label class="content__checkbox-label" for="checkbox-3">Проблема с кабелем</label>
+                    </div>
+                    <div class="content__checkbox-item">
+                        <input class="content__checkbox-input" type="checkbox"  id="checkbox-4" name="checkbox-content">
+                        <label class="content__checkbox-label" for="checkbox-4">Проблема с коннектером</label>
+                    </div>
+                </form>
             </div>
-    
+
+            <div class="important important__button defibrillator__block">
+                <a href="form.html" class="button__next" data-text="Далее"><span>Далее</span></a>
+            </div>
             
         </div>
         <footer class="footer quiz__footer">
